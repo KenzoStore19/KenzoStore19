@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KenzoStore19 - Jual Bot, Top Up, Followers & Desain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER / MENU -->
+    <header class="header">
+        <div class="container">
+            <h1>🛍️ KenzoStore19</h1>
+            <p class="tagline">Bot Spaceman | Top Up Game | Followers Sosmed | Desain Logo & Premium</p>
+            <nav class="nav">
+                <a href="#home" onclick="showPage('home')">Beranda</a>
+                <a href="#produk" onclick="showPage('produk')">Produk</a>
+                <a href="#keranjang" onclick="showPage('keranjang')">🛒 Keranjang (<span id="jumlahItem">0</span>)</a>
+                <a href="#tentang" onclick="showPage('tentang')">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HALAMAN BERANDA -->
+    <section id="home" class="page">
+        <div class="container">
+            <div class="banner">
+                <h2>🚀 Selamat Datang di KenzoStore19!</h2>
+                <p>Tempat Terpercaya untuk Bot Gaming, Top Up Game, Followers Sosial Media & Desain Premium</p>
+                <button class="btn-primary" onclick="showPage('produk')">Lihat Semua Produk</button>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Bot Spaceman</h3>
+                    <p>Bot otomatis spaceman terpercaya</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Top Up Game</h3>
+                    <p>Top up semua game populer</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Followers Sosmed</h3>
+                    <p>Tambah followers Instagram, TikTok, dll</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Desain Premium</h3>
+                    <p>Desain logo dan aplikasi profesional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HALAMAN PRODUK -->
+    <section id="produk" class="page" style="display:none;">
+        <div class="container">
+            <h2>📦 Semua Produk & Layanan</h2>
+            
+            <!-- Filter Kategori -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterKategori('semua')">Semua</button>
+                <button class="filter-btn" onclick="filterKategori('bot')">🤖 Bot</button>
+                <button class="filter-btn" onclick="filterKategori('topup')">🎮 Top Up</button>
+                <button class="filter-btn" onclick="filterKategori('followers')">📱 Followers</button>
+                <button class="filter-btn" onclick="filterKategori('desain')">✨ Desain</button>
+            </div>
+
+            <div class="products-grid" id="produksContainer">
+                <!-- Produk akan ditambahkan di sini oleh JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- HALAMAN KERANJANG -->
+    <section id="keranjang" class="page" style="display:none;">
+        <div class="container">
+            <h2>🛒 Keranjang Belanja</h2>
+            <div id="keranjangContainer">
+                <p>Keranjang Anda kosong</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HALAMAN TENTANG/KONTAK -->
+    <section id="tentang" class="page" style="display:none;">
+        <div class="container">
+            <h2>📞 Hubungi Kami</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>💬 WhatsApp</h3>
+                    <p>+62 812-3456-7890</p>
+                </div>
+                <div class="contact-card">
+                    <h3>📧 Email</h3>
+                    <p>info@kenzostore19.com</p>
+                </div>
+                <div class="contact-card">
+                    <h3>🕐 Jam Operasional</h3>
+                    <p>Setiap hari 09:00 - 22:00 WIB</p>
+                </div>
+                <div class="contact-card">
+                    <h3>✅ Garansi Kepuasan</h3>
+                    <p>100% Uang Kembali Jika Tidak Puas</p>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h3>Tentang KenzoStore19</h3>
+                <p>KenzoStore19 adalah toko online terpercaya yang menyediakan berbagai layanan digital berkualitas dengan harga kompetitif. Kami melayani ribuan pelanggan dengan kepuasan 100%.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2024 KenzoStore19. Semua hak dilindungi. | Layanan Digital Terpercaya</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
